@@ -1,6 +1,41 @@
 .typing-test-flex-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     height: 100%;
+    padding-top: 5%;
+}
+
+.typing-test-main-content-container {
+    min-width: 500px;
+    max-width: 900px;
+    width: 80%;
+    min-height: 540px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typing-test-button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #016BF2;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.typing-test-button-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
