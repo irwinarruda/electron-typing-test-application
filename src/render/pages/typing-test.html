@@ -1,17 +1,21 @@
 <div class="typing-test-flex-container">
     <h1 class="h1-title">Teste de Digitação</h1>
     <div class="typing-test-main-content-container">
-        <ul class="typing-test-button-container">
-            <li>
-                <a href="#" data-toggle="tab" role="tab">
-                    Real Reset <img src="./img/enter-key.svg" alt="Enter Key Image">
-                </a>
-            </li>
-            <li>
-                <a href="#" data-toggle="tab" role="tab">
-                    Space Reset <img src="./img/space-key.svg" alt="Space Key Image">
-                </a>
-            </li>
-        </ul>
+        <div class="typing-test-button-container">
+            <ul class="typing-test-button">
+                <li id="real-reset-button">
+                    Real Reset <span id="real-reset-img"></span>
+                </li>
+                <li id="space-reset-button">
+                    Space Reset <span id="space-reset-img"></span>
+                </li>
+            </ul>
+            <div class="typing-test-active-bar"></div>
+        </div>
+        <div class="typing-test-content-container">
+
+        </div>
     </div>
+    <div class="footer">&copy;Copyright - Irwin Arruda e Internet</div>
 </div>
+<script src="pages/typing-test-ctrl.js"></script>

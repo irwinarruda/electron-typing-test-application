@@ -1,4 +1,5 @@
 .typing-test-flex-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -13,6 +14,7 @@
     width: 80%;
     min-height: 540px;
     height: auto;
+    background-color: var(--white-color-dark);
     border-radius: 10px;
     box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -22,6 +24,10 @@
 }
 
 .typing-test-button-container {
+    position: relative;
+    width: 100%;
+}
+.typing-test-button {
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,10 +38,63 @@
     padding: 0px;
     border-radius: 10px 10px 0px 0px;
 }
-
-.typing-test-button-container a {
+#real-reset-img {
+    background: url("../img/enter-key.svg") no-repeat center center;
+}
+#space-reset-img {
+    background: url("../img/space-key.svg") no-repeat center center;
+}
+.typing-test-button li {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90px;
+    flex: 1;
+    width: 100%;
     text-decoration: none;
+    font: var(--primary-font-36-size);
+    font-weight: 600;
+    color: var(--white-color);
+    user-select: none;
+    transition: background 0.2s;
+}
+.typing-test-button li:hover {
+    cursor: pointer;
+}
+.typing-test-button li:active {
+    background-color: var(--primary-color-dark);
+}
+.typing-test-button li:first-child {
+    border-right: 2px solid var(--primary-color-clearer);
+    border-radius: 10px 0px 0px 0px;
+}
+.typing-test-button li:last-child {
+    border-left: 2px solid var(--primary-color-clearer);
+    border-radius: 0px 10px 0px 0px;
+}
+.typing-test-button span {
+    width: 60px;
+    height: 33px;
+    margin-left: 20px;
+}
+.typing-test-active-bar {
+    position: absolute;
+    height: 4px;
+    width: 49.7%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+    background-color: var(--secondary-color);
+}
+
+
+@media(max-width: 900px) {
+    .typing-test-button li {
+        height: 70px;
+        font: var(--primary-font-24-size);
+        font-weight: 600;
+    } 
+    .typing-test-active-bar {
+        width: 49.5%;
+    }
 }
